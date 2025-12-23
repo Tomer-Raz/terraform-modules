@@ -1,0 +1,516 @@
+{
+  "Microsoft.ApiManagement/service": {
+    "logs": {
+      "DeveloperPortalAuditLogs": ["ops"],
+      "GatewayLogs": ["ops"],
+      "WebSocketConnectionLogs": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Automation/automationAccounts": {
+    "logs": {
+      "AuditEvent": ["ops"],
+      "DscNodeStatus": ["ops"],
+      "JobLogs": ["ops"],
+      "JobStreams": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.CognitiveServices/accounts": {
+    "logs": {
+      "Audit": ["sec"],
+      "RequestResponse": ["ops", "sec"],
+      "Trace": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "microsoft.communication/communicationservices": {
+    "logs": {
+      "AuthOperational": ["sec"],
+      "ChatOperational": ["sec"],
+      "SMSOperational": ["sec"],
+      "Usage": ["sec"],
+      "CallSummary": ["sec"],
+      "CallSummaryUpdates": ["sec"],
+      "CallRecordingOperational": ["sec"],
+      "CallRecordingSummary": ["sec"],
+      "CallDiagnostics": ["sec"],
+      "CallDiagnosticsUpdates": ["sec"],
+      "CallAutomationOperational": ["sec"],
+      "CallAutomationMediaSummary": ["sec"],
+      "CallSurvey": ["sec"],
+      "CallClientOperations": ["sec"],
+      "CallClientMediaStatsTimeSeries": ["sec"],
+      "CallClosedCaptionsSummary": ["sec"],
+      "EmailSendMailOperational": ["sec"],
+      "EmailStatusUpdateOperational": ["sec"],
+      "EmailUserEngagementOperational": ["sec"],
+      "RoomsOperational": ["sec"],
+      "JobRouterOperational": ["sec"],
+      "AdvancedMessagingOperational": ["sec"]
+    },
+    "metrics": {
+      "Traffic": ["ops", "sec"]
+    }
+  },
+  "microsoft.compute/disks": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Compute/virtualMachines": {
+    "logs": {
+      "SoftwareUpdateProfile": ["ops"],
+      "SoftwareUpdates": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.DesktopVirtualization/applicationgroups": {
+    "logs": {
+      "Checkpoint": ["ops"],
+      "Error": ["ops"],
+      "Management": ["ops"]
+    }
+  },
+  "Microsoft.DesktopVirtualization/hostpools": {
+    "logs": {
+      "AgentHealthStatus": ["ops"],
+      "AutoscaleEvaluationPooled": ["ops"],
+      "Checkpoint": ["ops"],
+      "Connection": ["ops"],
+      "ConnectionGraphicsData": ["ops"],
+      "Error": ["ops"],
+      "HostRegistration": ["ops"],
+      "Management": ["ops"],
+      "NetworkData": ["ops"],
+      "SessionHostManagement": ["ops"]
+    }
+  },
+  "Microsoft.DesktopVirtualization/workspaces": {
+    "logs": {
+      "Error": ["ops"],
+      "Feed": ["ops"],
+      "Management": ["ops"]
+    }
+  },
+  "Microsoft.EventGrid/namespaces": {
+    "logs": {
+      "SuccessfulMqttConnections": ["sec"],
+      "FailedMqttConnections": ["sec"],
+      "MqttDisconnections": ["sec"],
+      "FailedMqttPublishedMessages": ["sec"],
+      "FailedMqttSubscriptionOperations": ["sec"],
+      "SuccessfulHttpDataPlaneOperations": ["sec"],
+      "FailedHttpDataPlaneOperations": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.EventGrid/systemTopics": {
+    "logs": {
+      "DeliveryFailures": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.EventHub/Namespaces": {
+    "logs": {
+      "ApplicationMetricsLogs": ["sec"],
+      "ArchiveLogs": ["sec"],
+      "AutoScaleLogs": ["sec"],
+      "CustomerManagedKeyUserLogs": ["sec"],
+      "DataDRLogs": ["sec"],
+      "DiagnosticErrorLogs": ["sec"],
+      "EventHubVNetConnectionEvent": ["sec"],
+      "KafkaCoordinatorLogs": ["sec"],
+      "KafkaUserErrorLogs": ["sec"],
+      "OperationalLogs": ["sec"],
+      "RuntimeAuditLogs": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "microsoft.insights/components": {
+    "logs": {
+      "AppAvailabilityResults": ["ops"],
+      "AppBrowserTimings": ["ops"],
+      "AppDependencies": ["ops"],
+      "AppEvents": ["ops"],
+      "AppExceptions": ["ops"],
+      "AppMetrics": ["ops"],
+      "AppPageViews": ["ops"],
+      "AppPerformanceCounters": ["ops"],
+      "AppRequests": ["ops"],
+      "AppSystemEvents": ["ops"],
+      "AppTraces": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.KeyVault/vaults": {
+    "logs": {
+      "AuditEvent": ["sec"],
+      "AzurePolicyEvaluationDetails": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Kusto/clusters": {
+    "logs": {
+      "Command": ["ops"],
+      "DataOperation": ["ops"],
+      "FailedIngestion": ["ops"],
+      "IngestionBatching": ["ops"],
+      "Journal": ["ops"],
+      "Query": ["ops"],
+      "SucceededIngestion": ["ops"],
+      "TableDetails": ["ops"],
+      "TableUsageStatistics": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Logic/Workflows": {
+    "logs": {
+      "WorkflowRuntime": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/azureFirewalls": {
+    "logs": {
+      "AZFWApplicationRule": ["sec"],
+      "AZFWApplicationRuleAggregation": ["sec"],
+      "AZFWDnsQuery": ["sec"],
+      "AZFWFatFlow": ["sec"],
+      "AZFWFlowTrace": ["sec"],
+      "AZFWFqdnResolveFailure": ["sec"],
+      "AZFWIdpsSignature": ["sec"],
+      "AZFWNatRule": ["sec"],
+      "AZFWNatRuleAggregation": ["sec"],
+      "AZFWNetworkRule": ["sec"],
+      "AZFWNetworkRuleAggregation": ["sec"],
+      "AZFWThreatIntel": ["sec"],
+      "AzureFirewallApplicationRule": ["sec"],
+      "AzureFirewallDnsProxy": ["sec"],
+      "AzureFirewallNetworkRule": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "microsoft.network/bastionHosts": {
+    "logs": {
+      "BastionAuditLogs": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/connections": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/expressRouteCircuits": {
+    "logs": {
+      "PeeringRouteLog": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/loadBalancers": {
+    "logs": {
+      "LoadBalancerHealthEvent": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/natgateways": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/networkinterfaces": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/privateDnsZones": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/privateEndpoints": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/publicIPAddresses": {
+    "logs": {
+      "DDoSMitigationFlowLogs": ["sec"],
+      "DDoSMitigationReports": ["sec"],
+      "DDoSProtectionNotifications": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/publicIPPrefixes": {
+    "logs": {
+      "DDoSMitigationFlowLogs": ["sec"],
+      "DDoSMitigationReports": ["sec"],
+      "DDoSProtectionNotifications": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "microsoft.network/virtualnetworkgateways": {
+    "logs": {
+      "GatewayDiagnosticLog": ["ops"],
+      "TunnelDiagnosticLog": ["ops"],
+      "RouteDiagnosticLog": ["ops"],
+      "IKEDiagnosticLog": ["ops"],
+      "P2SDiagnosticLog": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Network/virtualNetworks": {
+    "logs": {
+      "VMProtectionAlerts": ["ops", "sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Web/sites": {
+    "logs": {
+      "FunctionAppLogs": ["ops"],
+      "AppServiceAuthenticationLogs": ["ops", "sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Synapse/workspaces": {
+    "logs": {
+      "SynapseRbacOperations": ["sec"],
+      "GatewayApiRequests": ["ops", "sec"],
+      "SQLSecurityAuditEvents": ["sec"],
+      "BuiltinSqlReqsEnded": ["ops", "sec"],
+      "IntegrationActivityRuns": ["sec"],
+      "IntegrationPipelineRuns": ["ops", "sec"],
+      "IntegrationTriggerRuns": ["ops", "sec"],
+      "SynapseLinkEvent": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Synapse/workspaces/sqlPools": {
+    "logs": {
+      "SqlRequests": ["ops"],
+      "WaitsStats": ["ops"],
+      "RequestSteps": ["ops"],
+      "ExecRequests": ["ops"],
+      "DmsWorkers": ["ops"],
+      "SQLSecurityAuditEvents": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Synapse/workspaces/bigDataPools": {
+    "logs": {
+      "BigDataPoolAppsEnded": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Synapse/workspaces/kustoPools": {
+    "logs": {
+      "FailedIngestion": ["ops"],
+      "IngestionBatching": ["ops"],
+      "Command": ["ops"],
+      "Query": ["ops"],
+      "TableUsageStatistics": ["ops"],
+      "TableDetails": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts": {
+    "metrics": {
+      "Transaction": ["ops"],
+      "Capacity": ["ops"]
+    }
+  },
+  "microsoft.streamanalytics/streamingjobs": {
+    "logs": {
+      "Execution": ["sec"],
+      "Authoring": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Web/serverfarms": {
+    "metrics": {
+      "AllMetrics": ["ops"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/blobServices": {
+    "logs": {
+      "StorageRead": ["ops", "sec"],
+      "StorageWrite": ["ops", "sec"],
+      "StorageDelete": ["ops", "sec"]
+    },
+    "metrics": {
+      "Transaction": ["ops", "sec"],
+      "Capacity": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/fileServices": {
+    "logs": {
+      "StorageRead": ["ops"],
+      "StorageWrite": ["ops"],
+      "StorageDelete": ["ops"]
+    },
+    "metrics": {
+      "Transaction": ["ops"],
+      "Capacity": ["ops"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/queueServices": {
+    "logs": {
+      "StorageRead": ["ops"],
+      "StorageWrite": ["ops"],
+      "StorageDelete": ["ops"]
+    },
+    "metrics": {
+      "Transaction": ["ops"],
+      "Capacity": ["ops"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/tableServices": {
+    "logs": {
+      "StorageRead": ["ops"],
+      "StorageWrite": ["ops"],
+      "StorageDelete": ["ops"]
+    },
+    "metrics": {
+      "Transaction": ["ops"],
+      "Capacity": ["ops"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/managementPolicies": {
+    "logs": {
+      "PolicyAudit": ["sec"]
+    }
+  },
+  "Microsoft.Storage/storageAccounts/inventoryPolicies": {
+    "logs": {
+      "PolicyAudit": ["sec"]
+    }
+  },
+  "Microsoft.DataLakeAnalytics/accounts": {
+    "logs": {
+      "Audit": ["sec"],
+      "Requests": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.DataLakeStore/accounts": {
+    "logs": {
+      "Audit": ["sec"],
+      "Requests": ["ops"],
+      "DataAccess": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Monitor/accounts": {
+    "logs": {
+      "Audit": ["sec"],
+      "Autoscale": ["ops"],
+      "AlertRules": ["ops"],
+      "DiagnosticSettings": ["ops"],
+      "ActivityLog": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Resources/subscriptions": {
+    "logs": {
+      "Administrative": ["sec"],
+      "Security": ["sec"],
+      "ServiceHealth": ["ops", "sec"],
+      "Alert": ["ops", "sec"],
+      "Recommendation": ["ops", "sec"],
+      "Policy": ["sec"],
+      "Autoscale": ["ops", "sec"],
+      "ResourceHealth": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Peering/peerings": {
+    "logs": {
+      "PrefixLatency": ["ops"],
+      "PeeringAvailability": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Peering/peeringServices": {
+    "logs": {
+      "PrefixEvent": ["ops"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Peering/peeringServiceLocations": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.Peering/peeringServiceProviders": {
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  },
+  "Microsoft.OperationalInsights/workspaces": {
+    "logs": {
+      "Audit": ["sec"]
+    },
+    "metrics": {
+      "AllMetrics": ["ops", "sec"]
+    }
+  }
+}
